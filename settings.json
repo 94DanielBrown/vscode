@@ -1,0 +1,69 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "files.autoSave": "afterDelay",
+  "window.zoomLevel": 1,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<leader>", ";"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "#"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.view.explorer"]
+    },
+
+    {
+      "before": ["t"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": ["T"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    }
+  ],
+
+  "workbench.colorCustomizations": {
+    "terminalCursor.foreground": "#00ffaa"
+  },
+  "terminal.integrated.cursorBlinking": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off"
+}
+

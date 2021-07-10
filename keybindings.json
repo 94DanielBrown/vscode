@@ -1,0 +1,103 @@
+
+  // Toggle between terminal and editor focus
+  { "key": "ctrl+j", "command": "workbench.action.terminal.focus" },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+
+  // Editor vim in normal mode
+  {
+    "key": "alt+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.showEditorsInActiveGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+
+  {
+    "key": "cmd+enter",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+      "key": "alt+m",
+      "command": "workbench.action.closeActiveEditor"
+  }
+  
+
+  // suggestWidget
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+
+  // QuickOpen
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+
+  // Explorer
+  {
+    "key": "ctrl+m",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "renameFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "deleteFile",
+    "when": "explorerViewletFocus"
+  }
+]
+
