@@ -10,12 +10,11 @@
   // Editor vim in normal mode
   {
     "key": "alt+h",
-    "command": "workbench.action.focusLeftGroup",
-    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    "command": "workbench.action.previousEditorInGroup"
   },
   {
     "key": "alt+l",
-    "command": "workbench.action.focusActiveEditorGroup"
+    "command": "workbench.action.nextEditorInGroup"
   },
   {
     "key": "alt+k",
